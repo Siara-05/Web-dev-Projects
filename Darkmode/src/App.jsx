@@ -1,16 +1,20 @@
-import React from 'react'
+
+import React, { useState } from 'react'
 import Form from './components/Form'
 
-
 const App = () => {
-  return (
-    < div  className='min-h-screen bg-gradient-to-t from-blue-100 via-blue-300 to-blue-500'>
-    {/* <h1 className="px-10 m-20 text-3xl font-bold text-green-600">
-      Darkmode by react.js and tailwind.css
-    </h1> */}
+  const [theme, setTheme] = useState('light')
 
-    <Form />
-    
+  const toggleTheme = () => {
+    setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light')
+  }
+
+  return (
+    <div className={`min-h-screen ${theme === 'light' 
+      ? 'bg-gradient-to-t from-blue-100 via-blue-300 to-blue-500' 
+      : 'bg-gradient-to-t from-blue-700 via-blue-800 to-gray-900 text-white '}`}>
+
+      <Form onToggleTheme={toggleTheme} />
     </div>
   )
 }
