@@ -1,9 +1,16 @@
 import React from 'react'
+import Card from '../components/Card'
 
 function App () {
   return (
     <div>
-      <h1>Card gallery by react</h1>
+      <h1 className='text-2xl font-bold '> Card gallery by react </h1>
+
+      <Card/>
+      <Card/>
+      <Card/>
+
+
     </div>
   )
 }
