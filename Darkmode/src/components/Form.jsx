@@ -12,7 +12,7 @@ const Form = ({ onToggleTheme }) => {
   <div className='justify-center py-20 text-center px-15'>
   
   {/* Heading - style changes based on theme */}
-      <h1 className='justify-center px-10 py-4 text-2xl font-bold text-green-950'>  
+      <h1 className='justify-center px-10 py-4 text-2xl font-bold'>  
          Theme Changer by React.js and Tailwind.css
       </h1>
 
