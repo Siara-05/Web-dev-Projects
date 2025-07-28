@@ -15,7 +15,6 @@ function App () {
       <Card name="Rahul" prof="Researcher" image={Rahul} age="18"/> 
       <Card name="Om" prof="Gamer" image={Om} age="19"/>
 
-
     </div>
   )
 }
